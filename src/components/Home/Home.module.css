@@ -32,5 +32,14 @@
 }
 
 .AppLogo {
-    padding: 50px;
+  padding: 50px;
+}
+
+.errorMsg {
+  color: #ff5155;
+  font-family: Breamcatcher;
+  font-size: 35px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
 }
