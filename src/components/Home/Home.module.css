@@ -1,0 +1,36 @@
+.appName {
+  height: 81px;
+  font-family: LaserCorpsGradient;
+  font-size: 81px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ff5155;
+}
+
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tagName {
+  height: 26px;
+  font-family: Gotham;
+  font-size: 26px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  color: #ff5155;
+}
+
+.AppLogo {
+    padding: 50px;
+}
