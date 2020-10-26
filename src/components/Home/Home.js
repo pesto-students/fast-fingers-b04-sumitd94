@@ -4,6 +4,7 @@ import keyboard from '../../assets/keyboard.svg';
 import InputBox from '../InputBox/InputBox';
 import SelectBox from '../SelectBox/SelectBox';
 import StartGame from '../StartGame/StartGame';
+import PropTypes from 'prop-types';
 
 const Home = (props) => {
   const imgClassNames = [classNames.AppLogo];
@@ -50,7 +51,7 @@ const Home = (props) => {
       <p className={classNames.tagName}>{props.tagName}</p>
       {state.showErrorMessage ? (
         <p className={classNames.errorMsg}>
-          Hey, Please let us know your name !
+           Hey, your name please !
         </p>
       ) : null}
       <InputBox change={nameChangeHandler} name={state.name} />
@@ -61,6 +62,13 @@ const Home = (props) => {
       <StartGame click={startGameHandler} />
     </div>
   );
+};
+
+Home.propTypes = {
+  name: PropTypes.string,
+  tagName: PropTypes.string,
+  gameLevels: PropTypes.array,
+  startGame: PropTypes.func,
 };
 
 export default Home;

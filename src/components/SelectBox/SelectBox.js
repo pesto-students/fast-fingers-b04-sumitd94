@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from './SelectBox.module.css';
+import PropTypes from 'prop-types';
 
 const SelectBox = (props) => {
   return (
@@ -13,6 +14,11 @@ const SelectBox = (props) => {
       })}
     </select>
   );
+};
+
+SelectBox.propTypes = {
+  change: PropTypes.func,
+  options: PropTypes.array,
 };
 
 export default SelectBox;

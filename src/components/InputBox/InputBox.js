@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from './InputBox.module.css';
+import PropTypes from 'prop-types';
 
 const InputBox = (props) => {
   return (
@@ -11,6 +12,11 @@ const InputBox = (props) => {
       value={props.name}
     />
   );
+};
+
+InputBox.propTypes = {
+  name: PropTypes.string,
+  change: PropTypes.func,
 };
 
 export default InputBox;
