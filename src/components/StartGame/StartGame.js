@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from './StartGame.module.css';
 import playButton from '../../assets/playButton.svg';
+import PropTypes from 'prop-types';
 
 const StartGame = (props) => {
   return (
@@ -13,6 +14,10 @@ const StartGame = (props) => {
       <span className={classNames.startGameText}>Start Game</span>
     </div>
   );
+};
+
+StartGame.propTypes = {
+  click: PropTypes.func,
 };
 
 export default StartGame;
