@@ -24,9 +24,11 @@ const Game = (props) => {
     gameState: DIFFERENT_GAME_STATE.READY,
   });
 
+  /* eslint-disable */
   useEffect(() => {
     giveNewWord();
   }, []);
+  /* eslint-enable */
 
   const giveNewWord = () => {
     const word = getRandomWord();

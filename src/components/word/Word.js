@@ -4,9 +4,11 @@ import classNames from './Word.module.css';
 const Word = (props) => {
   const [state, setState] = useState([]);
 
+  /* eslint-disable */
   useEffect(() => {
     compareWord(props.word, props.typedWord);
   }, [props]);
+  /* eslint-enable */
 
   function compareWord(actualWord, typedWord) {
     if (!actualWord) {

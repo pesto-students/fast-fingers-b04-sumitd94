@@ -24,8 +24,9 @@
   margin-bottom: 76px;
 }
 
-.quit a{
+.quit {
   font-size: 50px;
   text-decoration: none;
   color: #ff5155;
+  cursor: pointer;
 }
