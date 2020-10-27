@@ -8,7 +8,7 @@ const InputBox = (props) => {
       className={classNames.userName}
       type='text'
       onChange={props.change}
-      placeholder='type your name'
+      placeholder={props.placeHolderText}
       value={props.name}
     />
   );
@@ -17,6 +17,7 @@ const InputBox = (props) => {
 InputBox.propTypes = {
   name: PropTypes.string,
   change: PropTypes.func,
+  placeHolderText: PropTypes.string,
 };
 
 export default InputBox;

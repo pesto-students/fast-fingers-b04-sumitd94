@@ -1,5 +1,5 @@
 .startGameText {
-  width: 307px;
+  width: 350px;
   height: 48px;
   text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
   font-family: Gotham;
@@ -16,7 +16,6 @@
 .startGameContainer {
   display: flex;
   align-items: center;
-  padding: 50px;
   border-radius: 10px;
   margin-top: 5px;
   border: 1px solid transparent;

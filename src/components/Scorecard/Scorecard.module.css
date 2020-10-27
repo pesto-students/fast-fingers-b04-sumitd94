@@ -1,0 +1,30 @@
+.scoreCard {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #ff5155;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 30px;
+  height: 100%;
+}
+
+.scoreCard .scoreCardTitle {
+  color: #ff5155;
+  font-size: 36px;
+  margin: 20px 0px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+}
+
+.bestScore {
+  font-size: 11px;
+  color: #ff5155;
+}
+
+.scoreData {
+  color: white;
+  margin-bottom: 12px;
+}

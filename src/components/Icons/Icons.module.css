@@ -1,0 +1,30 @@
+.appIcon {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 5px;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 0px rgb(255, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  margin: 11px 0px;
+  outline: none;
+  font-family: 'Gotham', sans-serif;
+}
+
+.appIcon span {
+  margin-right: 20px;
+  color: #ff5155;
+  margin-left: 20px;
+  height: 44px;
+  font-family: Breamcatcher;
+  font-size: 44px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ff5155;
+}
