@@ -11,7 +11,7 @@ const Game = (props) => {
     PLAY: 'play',
     SUCCESS: 'success',
     READY: 'ready',
-    FAIL:'fail'
+    FAIL: 'fail',
   };
 
   const EASY_WORDS_LENGTH = [2, 3, 4];
@@ -104,7 +104,11 @@ const Game = (props) => {
             word={state.word}
             typedWord={state.typedWord}
           />
-          <Input change={wordChangeHandler} name={state.typedWord} placeHolderText='Enter the words' />
+          <Input
+            change={wordChangeHandler}
+            name={state.typedWord}
+            placeHolderText='Enter the words'
+          />
         </>
       ) : (
         ''
@@ -123,6 +127,7 @@ Game.propTypes = {
   level: PropTypes.string,
   difficultyFactor: PropTypes.number,
   onWordMatch: PropTypes.func,
+  onFailure: PropTypes.func,
 };
 
 export default Game;

@@ -71,6 +71,9 @@ GameDetails.propTypes = {
   difficultyLevel: PropTypes.string,
   difficultyFactor: PropTypes.number,
   playerName: PropTypes.string,
+  onFailure: PropTypes.func,
+  bestGame: PropTypes.string,
+  previousGames: PropTypes.array,
 };
 
 export default GameDetails;

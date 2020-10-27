@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import classNames from './Word.module.css';
 
 const Word = (props) => {
@@ -64,6 +65,12 @@ const Word = (props) => {
       })}
     </div>
   );
+};
+
+Word.propTypes = {
+  word: PropTypes.string,
+  typedWord: PropTypes.string,
+  onMatch: PropTypes.func,
 };
 
 export default Word;
