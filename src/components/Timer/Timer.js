@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import './Timer.css';
 
 const Timer = (props) => {
@@ -88,6 +89,11 @@ const Timer = (props) => {
       </div>
     </div>
   );
+};
+
+Timer.propTypes = {
+  timeLeft: PropTypes.number,
+  onComplete: PropTypes.func,
 };
 
 export default Timer;

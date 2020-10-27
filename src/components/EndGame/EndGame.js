@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import StartGame from '../GameActions/GameActions';
 import classNames from './EndGame.module.css';
 import reloadIcon from '../../assets/Icon open-reload.svg';
@@ -24,5 +25,12 @@ function EndGame(props) {
     </div>
   );
 }
+
+EndGame.propTypes = {
+  playAgain: PropTypes.func,
+  previousGames: PropTypes.array,
+  bestGame: PropTypes.string,
+  quitGame: PropTypes.func,
+};
 
 export default EndGame;
