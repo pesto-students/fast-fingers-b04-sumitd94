@@ -18,8 +18,8 @@ function EndGame(props) {
         <span className={classNames.highScore}>New High Score</span>
       )}
       <StartGame click={playAgainHandler} text='PLAY AGAIN' icon={reloadIcon} />
-      <span className={classNames.quit}>
-        <a href='#' onClick={props.quitGame}>QUIT</a>
+      <span className={classNames.quit} onClick={props.quitGame}>
+        QUIT
       </span>
     </div>
   );

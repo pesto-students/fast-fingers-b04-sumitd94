@@ -5,9 +5,11 @@ const Timer = (props) => {
   let [timeToBeShown, setTimeToBeShown] = useState('--:--');
   let [strokeDashArray, setStrokeDashArray] = useState('283');
 
+  /* eslint-disable */
   useEffect(() => {
     startTimer();
   }, []);
+  /* eslint-enable */
 
   const TIME_LIMIT = props.timeLeft;
   const FULL_DASH_ARRAY = 283;
