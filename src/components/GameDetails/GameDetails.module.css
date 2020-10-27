@@ -1,0 +1,28 @@
+.leftPanel {
+  display: flex;
+  max-width: 350px;
+  flex-direction: column;
+  width: unset;
+  height: 100%;
+}
+
+.gameDetails {
+  margin-bottom: 15px;
+}
+
+.stopGame {
+  margin-bottom: 15px;
+  float: left;
+  position: fixed;
+  bottom: 0;
+}
+
+.scoreCardDiv {
+  display: inline-block;
+  float: left;
+  height: 500px;
+}
+
+.gameArenaDiv {
+  display: inline-block;
+}

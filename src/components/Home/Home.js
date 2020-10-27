@@ -3,7 +3,8 @@ import classNames from './Home.module.css';
 import keyboard from '../../assets/keyboard.svg';
 import InputBox from '../InputBox/InputBox';
 import SelectBox from '../SelectBox/SelectBox';
-import StartGame from '../StartGame/StartGame';
+import StartGame from '../GameActions/GameActions';
+import playButton from '../../assets/playButton.svg';
 import PropTypes from 'prop-types';
 
 const Home = (props) => {
@@ -50,16 +51,18 @@ const Home = (props) => {
       <h1 className={classNames.appName}>{props.name}</h1>
       <p className={classNames.tagName}>{props.tagName}</p>
       {state.showErrorMessage ? (
-        <p className={classNames.errorMsg}>
-           Hey, your name please !
-        </p>
+        <p className={classNames.errorMsg}>Hey, your name please !</p>
       ) : null}
-      <InputBox change={nameChangeHandler} name={state.name} />
+      <InputBox
+        change={nameChangeHandler}
+        name={state.name}
+        placeHolderText='Enter your name here'
+      />
       <SelectBox
         options={props.gameLevels}
         change={difficultyLevelChangeHandler}
       />
-      <StartGame click={startGameHandler} />
+      <StartGame click={startGameHandler} text='START GAME' icon={playButton} />
     </div>
   );
 };
