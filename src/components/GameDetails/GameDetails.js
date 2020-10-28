@@ -33,16 +33,13 @@ const GameDetails = (props) => {
     });
   };
 
-  const stopGameHandler = () => {
-    props.onFailure();
-  };
-
   return (
     <>
       <div className={classNames.leftPanel}>
         <div className={classNames.gameDetails}>
           <Icons icon={PersonIcon} text={props.playerName} />
           <Icons icon={GamePad} text={`LEVEL: ${state.difficultyLevel}`} />
+          <p className={classNames.scoreDetails}>score : {}</p>
         </div>
       </div>
       <div className={classNames.scoreCardDiv}>
@@ -61,7 +58,7 @@ const GameDetails = (props) => {
       </div>
 
       <div className={classNames.stopGame}>
-        <StartGame click={stopGameHandler} text='STOP GAME' icon={crossIcon} />
+        <StartGame click={props.onFailure} text='STOP GAME' icon={crossIcon} />
       </div>
     </>
   );

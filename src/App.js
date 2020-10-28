@@ -147,6 +147,7 @@ class App extends Component {
               onFailure={this.failGameHandler}
               previousGames={this.state.previousGames}
               bestGame={this.state.bestGame}
+              gameStartAt={this.state.gameStartAt}
             />
           ) : (
             ''
