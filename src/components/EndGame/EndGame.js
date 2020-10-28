@@ -5,9 +5,6 @@ import classNames from './EndGame.module.css';
 import reloadIcon from '../../assets/Icon open-reload.svg';
 
 function EndGame(props) {
-  const playAgainHandler = () => {
-    //props.playAgain();
-  };
 
   const prevGame = props.previousGames[props.previousGames.length - 1];
 
