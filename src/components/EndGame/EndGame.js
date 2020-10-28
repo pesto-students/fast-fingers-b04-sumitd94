@@ -5,9 +5,6 @@ import classNames from './EndGame.module.css';
 import reloadIcon from '../../assets/Icon open-reload.svg';
 
 function EndGame(props) {
-  const playAgainHandler = () => {
-    props.playAgain();
-  };
 
   const prevGame = props.previousGames[props.previousGames.length - 1];
 
@@ -18,7 +15,7 @@ function EndGame(props) {
       {props.bestGame === prevGame.gameName && (
         <span className={classNames.highScore}>New High Score</span>
       )}
-      <StartGame click={playAgainHandler} text='PLAY AGAIN' icon={reloadIcon} />
+      <StartGame click={props.playAgain} text='PLAY AGAIN' icon={reloadIcon} />
       <span className={classNames.quit} onClick={props.quitGame}>
         QUIT
       </span>
