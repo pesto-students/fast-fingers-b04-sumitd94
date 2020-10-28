@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  background-image: url('./assets/background.png');
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'breamcatcher';
+  src: local('breamcatcher'), url(./fonts/breamcatcher/breamcatcher.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'lasercorpsgrad';
+  src: local('lasercorpsgrad'), url(./fonts/Laser_Corps/lasercorpsgrad.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham'), url(./fonts/Gotham\ Book\ Regular.otf) format('opentype');
+}
