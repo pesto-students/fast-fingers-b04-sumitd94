@@ -1,0 +1,49 @@
+.App-Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 362px;
+}
+
+.App-Home.wide-screen {
+  max-width: 662px;
+}
+
+.App-name {
+  color: #ff5155;
+  font-size: 31px;
+  margin-top: 20px;
+}
+
+.App-Home.wide-screen .App-name {
+  font-size: 75px;
+}
+
+.App-tag {
+  margin-bottom: 30px;
+}
+
+.App-Home.wide-screen .App-tag {
+  margin-bottom: 60px;
+}
+
+.App-Home .App-logo {
+  width: 180px;
+}
+
+.App-Home.wide-screen .App-logo {
+  width: unset;
+}
+
+.error-msg {
+  color: #ff5155;
+  font-family: Breamcatcher;
+  font-size: 35px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  margin:0;
+  margin-bottom: 8px;
+}
